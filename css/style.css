@@ -102,7 +102,6 @@
   /* Responsive adjustments */
   @media (max-width: 1024px) {
     .dh-hero-content {
-      font-size: 2rem;
       padding: 15px;
     }
   
