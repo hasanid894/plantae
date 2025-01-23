@@ -34,7 +34,6 @@
     background-size: cover;
     width: 100%;
 }
-
 .dh-hero-section::before{
     background-color: rgba(0, 0, 0, 0.6);
     content: "";
@@ -137,7 +136,6 @@ footer{
     cursor: pointer;
     text-align: center;
   }
-  
   .dh-login-button:hover {
     background-color:#00b383;
   }
