@@ -29,7 +29,7 @@
 .nav-link:hover .nav-link:active{
     color: #000;
 }
-.dh-hero-section{
+/*.dh-hero-section{
     background: url(../images/pexels-vlada-karpovich-4451950.jpg) center no-repeat;
     background-size: cover;
     width: 100%;
@@ -52,7 +52,88 @@
     height: 100vh;
     z-index: 1;
     position: relative;
+}*/
+.dh-hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dh-hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire section */
+    z-index: -1; /* Places the video behind the content */
+  }
+  
+  .dh-hero-content {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    z-index: 2; /* Places the text above the video */
+    padding: 20px;
 }
+.dh-hero-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+    z-index: 1; /* Stays behind the text */
+}
+
+.dh-hero-content h1,
+.dh-hero-content p {
+    position: relative; 
+    z-index: 2;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
+}
+  
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .dh-hero-content {
+      font-size: 2rem;
+      padding: 15px;
+    }
+  
+    .dh-hero-section {
+      height: 80vh;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .dh-hero-content {
+      font-size: 1.5rem;
+      padding: 10px;
+    }
+  
+    .dh-hero-section {
+      height: 70vh;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .dh-hero-content {
+      font-size: 1.2rem;
+      padding: 5px;
+    }
+  
+    .dh-hero-section {
+      height: 60vh;
+    }
+  }
+
 .dh-explore-button {
     display: inline-block;
     padding: 10px 20px;
