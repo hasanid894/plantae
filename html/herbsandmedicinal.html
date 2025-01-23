@@ -20,7 +20,8 @@
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Plantae</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+              </button>
             </div>
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
@@ -55,29 +56,29 @@
             </div>
           </div>
           <a class="navbar-brand" href="#"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
           <label for="toggleLoginForm" class="dh-login-button">Log In</label>
-      <input type="checkbox" id="toggleLoginForm" hidden>
-      <div class="dh-login-form-container">
-        <form action="your-login-script.php" method="POST">
-          <div class="dh-email">
-            <label for="email" class="dh-form-label">Email Address</label>
-            <input type="email" class="dh-form-control" id="email" name="email" required>
-          </div>
-          <div class="dh-password">
-            <label for="password" class="dh-form-label">Password</label>
-            <input type="password" class="dh-form-control" id="password" name="password" required>
-          </div>
-          <div class="dh-form-check">
-            <input type="checkbox" class="form-check-input" id="rememberMe">
-            <label class="form-check-label" for="rememberMe">Remember Me</label>
-          </div>
-          <button type="submit" class="btn btn-primary">Log In</button>
-        </form>
-      </div>
-      </nav>  
+          <input type="checkbox" id="toggleLoginForm" hidden>
+            <div class="dh-login-form-container">
+                <form action="your-login-script.php" method="POST">
+                    <div class="dh-email">
+                        <label for="email" class="dh-form-label">Email Address</label>
+                        <input type="email" class="dh-form-control" id="email" name="email" required>
+                    </div>
+                    <div class="dh-password">
+                        <label for="password" class="dh-form-label">Password</label>
+                        <input type="password" class="dh-form-control" id="password" name="password" required>
+                    </div>
+                    <div class="dh-form-check">
+                        <label class="form-check-label" for="rememberMe">Remember Me</label>
+                        <input type="checkbox" class="form-check-input" id="rememberMe">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Log In</button>
+                </form>
+            </div>
+        </nav>  
       <main class="dh-plants">
         <div class="dh-plant-item">
             <img src="../images/mint.jpg">
