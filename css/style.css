@@ -65,11 +65,10 @@
   }
   
 .dh-explore-button:hover {
-    background-color: #ffffff; /* Invert colors on hover */
+    background-color: #ffffff;
     color: #3c8d40;
-    transform: scale(1.05); /* Slight zoom effect */
-  }
-  
+    transform: scale(1.05); /*zoom effect */
+  }  
 .dh-explore-button:active {
     transform: scale(0.95); /* Click effect */
   }  
@@ -150,7 +149,7 @@ footer{
     border: 1px solid #ddd;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    display: none; /* Hidden by default */
+    display: none; /* E fshehur by default */
   }
   #toggleLoginForm:checked ~ .dh-login-form-container {
     display: block;
@@ -223,7 +222,7 @@ footer{
 }
 
 .dh-plant-item {
-  flex: 1 1 calc(33.333% - 40px); /* 3 items per row with spacing */
+  flex: 1 1 calc(33.333% - 40px); /* 3 objekte per rresht,me hapsire */
   max-width: calc(33.333% - 40px);
   background: #f8f9fa;
   border: 1px solid #ddd;
@@ -232,41 +231,36 @@ footer{
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s, box-shadow 0.2s;
 }
-
 .dh-plant-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
-
 .dh-plant-item img {
   width: 100%;
   height: 200px;
   object-fit: cover;
   border-bottom: 1px solid #ddd;
 }
-
 .dh-plant-item h2 {
   margin: 15px;
   font-size: 18px;
   color: #333;
 }
-
 .dh-plant-item p {
   margin: 0 15px 15px;
   font-size: 14px;
   color: #555;
 }
-
 @media (max-width: 768px) {
   .dh-plant-item {
-    flex: 1 1 calc(50% - 40px); /* 2 items per row for tablets */
+    flex: 1 1 calc(50% - 40px); /* 2 objekte ne rresht,per tablet */
     max-width: calc(50% - 40px);
   }
 }
 
 @media (max-width: 576px) {
   .dh-plant-item {
-    flex: 1 1 calc(100% - 40px); /* 1 item per row for small devices */
+    flex: 1 1 calc(100% - 40px); /* Nje objekt ne rresht per telefon */
     max-width: calc(100% - 40px);
   }
 }
@@ -285,11 +279,11 @@ img:hover {
 }
 #lightbox p {
   color: white;
-  text-align: justify; /* Aligns text evenly on both sides */
-  font-size: 1.2rem; /* Adjust font size for readability */
-  line-height: 1.6; /* Adds spacing between lines for better legibility */
-  max-width: 80%; /* Limits the text width for better aesthetics */
-  margin: 0 auto; /* Centers the text inside the lightbox */
+  text-align: justify;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 80%;
+  margin: 0 auto;
 }
 .dh-contact {
 padding: 40px 20px;
@@ -309,7 +303,7 @@ margin-bottom: 30px;
 }
 .container {
 display: flex;
-flex-wrap: wrap; /* Ensure responsiveness */
+flex-wrap: wrap;
 justify-content: space-between;
 gap: 20px;
 }
@@ -321,7 +315,6 @@ max-width: 45%;
 .dh-box {
 margin-bottom: 20px;
 }
-
 .dh-icon {
 display: inline-block;
 margin-right: 10px;
@@ -330,7 +323,6 @@ color: #00ff7f;
 .dh-text, address {
 display: inline-block;
 }
-
 .dh-contactus-title {
 font-size: 18px;
 font-weight: bold;
@@ -343,12 +335,10 @@ background: rgba(255, 255, 255,0.1);
 padding: 20px;
 border-radius: 8px;
 }
-
 .dh-input-box {
 position: relative;
 margin-bottom: 20px;
 }
-
 .dh-input, .textarea {
 width: 100%;
 padding: 10px;
@@ -359,11 +349,9 @@ color: #fff;
 outline: none;
 resize: none;
 }
-
 textarea.textarea {
 height: 100px;
 }
-
 input[type="submit"] {
 background: #00ff7f;
 border: none;
@@ -378,8 +366,6 @@ input[type="submit"]:hover {
 background: #008f5f;
 color: #fff;
 }
-
-/* Responsive Design */
 @media screen and (max-width: 768px) {
 .container {
     flex-direction: column;
@@ -395,44 +381,34 @@ color: #fff;
   border-collapse: collapse;
   margin-bottom: 20px;
 }
-/* General Body Styling */
 .dh-body-terms {
   background-color: #f9f9f9;
   margin: 0;
   padding: 20px;
   color: #333;
 }
-
-/* Title Styling */
 .dh-terms-title {
   font-size: 2em;
   color: #2d6a4f;
   text-align: center;
   margin-bottom: 20px;
 }
-
-/* Headings Styling */
 .dh-terms-heading {
   font-size: 1.5em;
   color: #40916c;
   margin-top: 20px;
   margin-bottom: 10px;
 }
-
-/* Paragraph Styling */
 .dh-terms-paragraph {
   font-size: 1em;
   line-height: 1.6;
   color: #555;
   margin-bottom: 15px;
 }
-
-/* List Styling */
 .dh-terms-list {
   padding-left: 20px;
   margin-bottom: 20px;
 }
-
 .dh-terms-list-item {
   font-size: 1em;
   color: #444;
