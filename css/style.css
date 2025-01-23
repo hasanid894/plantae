@@ -284,6 +284,7 @@ img:hover {
   line-height: 1.6;
   max-width: 80%;
   margin: 0 auto;
+  z-index:1;
 }
 .dh-contact {
 padding: 40px 20px;
