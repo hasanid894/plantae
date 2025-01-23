@@ -29,30 +29,7 @@
 .nav-link:hover .nav-link:active{
     color: #000;
 }
-/*.dh-hero-section{
-    background: url(../images/pexels-vlada-karpovich-4451950.jpg) center no-repeat;
-    background-size: cover;
-    width: 100%;
-}
-.dh-hero-section::before{
-    background-color: rgba(0, 0, 0, 0.6);
-    content: "";
-    position:absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-.dh-hero-text{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    flex-direction: column;
-    height: 100vh;
-    z-index: 1;
-    position: relative;
-}*/
+
 .dh-hero-section {
     position: relative;
     width: 100%;
@@ -77,7 +54,6 @@
     position: relative;
     text-align: center;
     color: #fff;
-    font-weight: bold;
     z-index: 2; /* Places the text above the video */
     padding: 20px;
 }
@@ -102,6 +78,7 @@
   /* Responsive adjustments */
   @media (max-width: 1024px) {
     .dh-hero-content {
+      font-size: 2rem;
       padding: 15px;
     }
   
@@ -131,26 +108,6 @@
       height: 60vh;
     }
   }
-
-/*.dh-explore-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1rem;
-    font-weight: bold;
-    color: #ffffff;
-    background-color: #064f0a; 
-    border-radius: 50px;
-    text-decoration: none;
-  }
-  
-.dh-explore-button:hover {
-    background-color: #ffffff;
-    color: #3c8d40;
-    transform: scale(1.05); /*zoom effect */
-  }  
-/*.dh-explore-button:active {
-    transform: scale(0.95); /* Click effect */
-  }  
 .dh-socilanet-item{
     text-decoration: none;
 }
