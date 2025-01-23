@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+.navbar{
+    background-color: #fff;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+    position: sticky;
+}
+.navbar-toggler{
+    border: none;
+    font-size: 1.25rem;
+}
+.navbar-toggler:focus .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+.nav-link{
+    color: #666777;
+    font-weight: 500;
+    white-space: nowrap;
+}
+.nav-link:hover .nav-link:active{
+    color: #000;
+}
+.dh-hero-section{
+    background: url(../images/pexels-vlada-karpovich-4451950.jpg) center no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.dh-hero-section::before{
+    background-color: rgba(0, 0, 0, 0.6);
+    content: "";
+    position:absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.dh-hero-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+.dh-explore-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #064f0a; 
+    border-radius: 50px;
+    text-decoration: none;
+  }
+  
+.dh-explore-button:hover {
+    background-color: #ffffff; /* Invert colors on hover */
+    color: #3c8d40;
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+.dh-explore-button:active {
+    transform: scale(0.95); /* Click effect */
+  }  
+.dh-socilanet-item{
+    text-decoration: none;
+}
+footer{
+    padding: 40px 0;
+    background-color: #fff;
+    text-align: center;
+}
+.dh-social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: #4b4c4d;
+}
+.dh-socilanet-item{
+    font-size: 24px;
+    color: #4b4c4d;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+.dh-socilanet-item:hover{
+    opacity: 0.9;
+}
+.dh-footer-list{
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+.dh-footer-listitema{
+    color: #4b4c4d;
+    text-decoration: none;
+    opacity: 0.8;
+}
+.dh-footer-listitem{
+    display: inline-block;
+    padding: 0 15px;
+}
+.dh-footer-listitema:hover{
+    opacity: 1;
+}
+.dh-copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+}
+.dh-login-button {
+    display: inline-block;
+    background-color: #064f0a ;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .dh-login-button:hover {
+    background-color:#00b383;
+  }
+  .dh-login-form-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: none; /* Hidden by default */
+  }
+  #toggleLoginForm:checked ~ .dh-login-form-container {
+    display: block;
+  }
+  .dh-email .dh-password .dh-form-check {
+    margin-bottom: 15px;
+  }
+  .dh-form-label {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .dh-form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .btn-primary {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }  
+  .dh-aboutus{
+    background: url(../images/pexels-vlada-karpovich-4451950.jpg) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 3rem 2rem 2rem;
+  }
+  .dh-aboutus-2{
+    gap: 20px;
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+  }
+.dh-aboutus-card{
+    background-color:wheat;
+    padding: 2.5rem 3rem 2rem 1.5rem;
+    border-radius: 1rem;
+}
+.dh-aboutus-card-number{
+    display: inline-block;
+    background-color: rgb(66, 38, 38);
+    color: #FFF;
+    padding: .5rem .75rem;
+    border-radius: .25rem;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    transition: .3s;
+}
+.dh-aboutus-card-title{
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+.dh-aboutus-card-description{
+    font-size:0.813rem;
+}
+.dh-plants {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 200px;
+}
+
+.dh-plant-item {
+  flex: 1 1 calc(33.333% - 40px); /* 3 items per row with spacing */
+  max-width: calc(33.333% - 40px);
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.dh-plant-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.dh-plant-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.dh-plant-item h2 {
+  margin: 15px;
+  font-size: 18px;
+  color: #333;
+}
+
+.dh-plant-item p {
+  margin: 0 15px 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .dh-plant-item {
+    flex: 1 1 calc(50% - 40px); /* 2 items per row for tablets */
+    max-width: calc(50% - 40px);
+  }
+}
+
+@media (max-width: 576px) {
+  .dh-plant-item {
+    flex: 1 1 calc(100% - 40px); /* 1 item per row for small devices */
+    max-width: calc(100% - 40px);
+  }
+}
+.dh-plant-description {
+  display: none;
+  margin-top: 20px;
+}
+img {
+  cursor: pointer;
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.2s;
+}
+img:hover {
+  transform: scale(1.05);
+}
+#lightbox p {
+  color: white;
+  text-align: justify; /* Aligns text evenly on both sides */
+  font-size: 1.2rem; /* Adjust font size for readability */
+  line-height: 1.6; /* Adds spacing between lines for better legibility */
+  max-width: 80%; /* Limits the text width for better aesthetics */
+  margin: 0 auto; /* Centers the text inside the lightbox */
+}
+.dh-contact {
+padding: 40px 20px;
+height: 100%;
+background: url(../images/pexels-vlada-karpovich-4451950.jpg) no-repeat center center fixed;
+background-size: cover;
+color: #fff;
+}
+.dh-contactus {
+margin-top: 100px;
+text-align: center;
+margin-bottom: 20px;
+}
+.dh-contactus-description {
+text-align: center;
+margin-bottom: 30px;
+}
+.container {
+display: flex;
+flex-wrap: wrap; /* Ensure responsiveness */
+justify-content: space-between;
+gap: 20px;
+}
+.dh-contact-info {
+flex: 1;
+min-width: 300px;
+max-width: 45%;
+}
+.dh-box {
+margin-bottom: 20px;
+}
+
+.dh-icon {
+display: inline-block;
+margin-right: 10px;
+color: #00ff7f;
+}
+.dh-text, address {
+display: inline-block;
+}
+
+.dh-contactus-title {
+font-size: 18px;
+font-weight: bold;
+}
+.dh-contact-form {
+flex: 1;
+min-width: 300px;
+max-width: 45%;
+background: rgba(255, 255, 255,0.1);
+padding: 20px;
+border-radius: 8px;
+}
+
+.dh-input-box {
+position: relative;
+margin-bottom: 20px;
+}
+
+.dh-input, .textarea {
+width: 100%;
+padding: 10px;
+background:transparent;
+border: 2px solid #00ff7f;
+border-radius: 5px;
+color: #fff;
+outline: none;
+resize: none;
+}
+
+textarea.textarea {
+height: 100px;
+}
+
+input[type="submit"] {
+background: #00ff7f;
+border: none;
+padding: 10px 20px;
+color: #000;
+font-weight: bold;
+cursor: pointer;
+border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+background: #008f5f;
+color: #fff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+.container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.dh-contact-info, .dh-contact-form {
+    max-width: 100%;
+}
+}
+.table-responsive{
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+/* General Body Styling */
+.dh-body-terms {
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+/* Title Styling */
+.dh-terms-title {
+  font-size: 2em;
+  color: #2d6a4f;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Headings Styling */
+.dh-terms-heading {
+  font-size: 1.5em;
+  color: #40916c;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Paragraph Styling */
+.dh-terms-paragraph {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* List Styling */
+.dh-terms-list {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.dh-terms-list-item {
+  font-size: 1em;
+  color: #444;
+  margin-bottom: 10px;
+}
