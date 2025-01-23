@@ -7,42 +7,12 @@ function toggleLoginForm() {
     } else {
       form.style.display = "none";
     }
-  }/*
-  document.addEventListener("DOMContentLoaded", () => {
-    const plantItems = document.querySelectorAll(".dh-plant-item");
-
-    plantItems.forEach((item) => {
-        const image = item.querySelector("img");
-        const description = item.querySelector(".dh-plant-description");
-
-        // Initially hide the description
-        description.style.display = "none";
-
-        // Add click event to the image
-        image.addEventListener("click", () => {
-            // Hide all other descriptions first
-            plantItems.forEach((otherItem) => {
-                const otherDescription = otherItem.querySelector(".dh-plant-description");
-                if (otherDescription !== description) {
-                    otherDescription.style.display = "none";
-                }
-            });
-
-            // Toggle the clicked item's description
-            if (description.style.display === "none") {
-                description.style.display = "block";
-            } else {
-                description.style.display = "none";
-            }
-        });
-    });
-});
-*/
+  }
 document.addEventListener("DOMContentLoaded", () => {
   const plantItems = document.querySelectorAll(".dh-plant-item");
   const lightbox = document.createElement("div");
 
-  // Create the lightbox structure
+  //struktura e lightbox-it
   lightbox.id = "lightbox";
   lightbox.style.position = "fixed";
   lightbox.style.top = "0";
