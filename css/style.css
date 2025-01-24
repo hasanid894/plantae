@@ -368,22 +368,10 @@ color: #00ff7f;
 .dh-text, address {
 display: inline-block;
 }
-.dh-content,.dh-text, address{
-  color: white;
-  z-index: 3;
-}
 .dh-contactus-title {
 font-size: 18px;
 font-weight: bold;
 }
-.dh-contact .container {
-    position: relative;
-    z-index: 2; /* Ensure text is above the overlay */
-}
-.dh-input, .textarea {
-    color: #fff; /* Ensure input text is white */
-}
-
 .dh-contact-form {
 flex: 1;
 min-width: 300px;
@@ -422,7 +410,13 @@ input[type="submit"]:hover {
 background: #008f5f;
 color: #fff;
 }
-
+.dh-contact,
+.dh-contact p,
+.dh-contact h1,
+.dh-contact h2,
+.dh-contact address {
+    color: #fff;
+}
 
 @media screen and (max-width: 768px) {
 .container {
