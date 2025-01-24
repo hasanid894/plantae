@@ -319,11 +319,22 @@ img:hover {
   margin: 0 auto;
 }
 .dh-contact {
+position: relative;
 padding: 40px 20px;
 height: 100%;
 background: url(../images/pexels-vlada-karpovich-4451950.jpg) no-repeat center center fixed;
 background-size: cover;
 color: #fff;
+}
+.dh-contact::before {
+    content: ""; /* Add an empty element for the overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 1; /* Ensure the overlay is behind the text */
 }
 .dh-contactus {
 margin-top: 100px;
@@ -405,37 +416,15 @@ color: #fff;
     flex-direction: column;
     align-items: center;
 }
-
 .dh-contact-info, .dh-contact-form {
     max-width: 100%;
 }
 }
-.dh-contact {
-    position: relative; /* Ensures proper positioning for the overlay */
-    padding: 40px 20px;
-    height: 100%;
-    background: url(../images/pexels-vlada-karpovich-4451950.jpg) no-repeat center center fixed;
-    background-size: cover;
-    color: #fff;
-    overflow: hidden; /* Prevents overflow of content */
-}
-
-.dh-contact::before {
-    content: ""; /* Add an empty element for the overlay */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
-    z-index: 1; /* Ensure the overlay is behind the text */
-}
-
-.dh-contact .dh-content,
+/*.dh-contact .dh-content,
 .dh-contact .container {
     position: relative;
     z-index: 2; /* Place the text content above the overlay */
-}
+
 
 .table-responsive{
   width: 100%;
