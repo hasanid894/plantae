@@ -372,10 +372,10 @@ display: inline-block;
 font-size: 18px;
 font-weight: bold;
 }
-.dh-contact .container {
+.dh-content .container {
     position: relative;
     z-index: 2; /* Ensure text is above the overlay */
-    
+    color:white;
 }
 .dh-input, .textarea {
     color: #fff; /* Ensure input text is white */
