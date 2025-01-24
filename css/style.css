@@ -375,6 +375,7 @@ font-weight: bold;
 .dh-contact .container {
     position: relative;
     z-index: 2; /* Ensure text is above the overlay */
+    
 }
 .dh-input, .textarea {
     color: #fff; /* Ensure input text is white */
