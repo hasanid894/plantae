@@ -107,7 +107,7 @@
 .dh-socilanet-item{
     text-decoration: none;
 }
-footer{
+/*footer{
     padding: 40px 0;
     background-color: #fff;
     text-align: center;
@@ -119,7 +119,7 @@ footer{
     font-size: 0.8rem;  Make text smaller 
   }
 }*/
-.dh-social{
+/*.dh-social{
     text-align: center;
     padding-bottom: 25px;
     color: #4b4c4d;
@@ -163,7 +163,49 @@ footer{
     text-align: center;
     font-size: 13px;
     color: #aaa;
+}*/
+footer {
+    padding: 40px 0;
+    background-color: #fff;
+    text-align: center;
 }
+
+@media (max-width: 768px) {
+    footer {
+        padding: 20px 0; /* Reduce padding */
+    }
+
+    .dh-footer-listitem {
+        font-size: 16px; /* Reduce font size of footer links */
+    }
+
+    .dh-copyright {
+        font-size: 12px; /* Reduce font size of copyright text */
+    }
+
+    .dh-socilanet-item {
+        font-size: 20px; /* Reduce icon size */
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 15px 0; /* Further reduce padding */
+    }
+
+    .dh-footer-listitem {
+        font-size: 14px; /* Further reduce footer font size */
+    }
+
+    .dh-copyright {
+        font-size: 10px; /* Further reduce copyright text size */
+    }
+
+    .dh-socilanet-item {
+        font-size: 18px; /* Further reduce icon size */
+    }
+}
+
 
 .dh-login-button {
     display: inline-block;
