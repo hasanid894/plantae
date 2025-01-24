@@ -64,8 +64,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
-    z-index: 1; /* Stays behind the text */
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
 }
 
 .dh-hero-content h1,
@@ -286,14 +286,14 @@ footer{
 }
 @media (max-width: 768px) {
   .dh-plant-item {
-    flex: 1 1 calc(50% - 40px); /* 2 objekte ne rresht,per tablet */
+    flex: 1 1 calc(50% - 40px);
     max-width: calc(50% - 40px);
   }
 }
 
 @media (max-width: 576px) {
   .dh-plant-item {
-    flex: 1 1 calc(100% - 40px); /* Nje objekt ne rresht per telefon */
+    flex: 1 1 calc(100% - 40px);
     max-width: calc(100% - 40px);
   }
 }
@@ -318,109 +318,7 @@ img:hover {
   max-width: 80%;
   margin: 0 auto;
 }
-/*.dh-contact {
-position: relative;
-padding: 40px 20px;
-height: 100%;
-background: url(../images/pexels-vlada-karpovich-4451950.jpg) no-repeat center center fixed;
-background-size: cover;
-color:#fff;
-z-index:2; 
-}
-.dh-contact::before {
-  content: ""; 
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); 
-  z-index: 1; 
-  pointer-events: none;
-}
-.dh-contactus {
-margin-top: 100px;
-text-align: center;
-margin-bottom: 20px;
-}
-.dh-contactus-description {
-text-align: center;
-margin-bottom: 30px;
-}
-.container {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-gap: 20px;
-}
-.dh-contact-info {
-flex: 1;
-min-width: 300px;
-max-width: 45%;
-}
-.dh-box {
-margin-bottom: 20px;
-}
-.dh-icon {
-display: inline-block;
-margin-right: 10px;
-color: #00ff7f;
-}
-.dh-text, address {
-display: inline-block;
-}
-.dh-contactus-title {
-font-size: 18px;
-font-weight: bold;
-}
-.dh-contact-form {
-flex: 1;
-min-width: 300px;
-max-width: 45%;
-padding: 20px;
-border-radius: 8px;
-}
-.dh-input-box {
-position: relative;
-margin-bottom: 20px;
-}
-.dh-input, .textarea {
-width: 100%;
-padding: 10px;
-background:rgba(0,0,0,0.6);
-border: 2px solid #00ff7f;
-border-radius: 5px;
-color: #fff;
-outline: none;
-resize: none;
-}
-textarea.textarea {
-height: 100px;
-}
-input[type="submit"] {
-background: #00ff7f;
-border: none;
-padding: 10px 20px;
-color: #000;
-font-weight: bold;
-cursor: pointer;
-border-radius: 5px;
-}
 
-input[type="submit"]:hover {
-background: #008f5f;
-color: #fff;
-}
-@media screen and (max-width: 768px) {
-.container {
-    flex-direction: column;
-    align-items: center;
-}
-.dh-contact-info, .dh-contact-form {
-    max-width: 100%;
-    text-align:center;
-}
-}*/
 .dh-contact {
     position: relative;
     padding: 40px 20px;
@@ -428,7 +326,7 @@ color: #fff;
     background: url(../images/pexels-vlada-karpovich-4451950.jpg) no-repeat center center fixed;
     background-size: cover;
     color: #fff;
-    overflow: hidden; /* Ensure child elements stay within bounds */
+    overflow: hidden; 
 }
 
 .dh-contact::before {
@@ -440,28 +338,27 @@ color: #fff;
     height: 100%;
     background: rgba(0, 0, 0, 0.5); 
     z-index: 1; 
-    pointer-events: none; /* Prevent overlay from affecting interactions */
+    pointer-events: none; 
 }
 
 .dh-content {
     position: relative;
-    z-index: 2; /* Ensure content appears above the overlay */
+    z-index: 2;
     text-align: center;
-    padding: 20px; /* Optional: Adjust for spacing */
+    padding: 20px;
 }
 
 .dh-contactus {
     margin-top: 100px;
     text-align: center;
     margin-bottom: 20px;
-    color: #fff; /* Explicit color to ensure white text */
-   /* z-index: 2;*/
+    color: #fff; 
 }
 
 .dh-contactus-description {
     text-align: center;
     margin-bottom: 30px;
-    color: #fff; /* Explicit color for description */
+    color: #fff; 
 }
 
 .container {
@@ -470,7 +367,7 @@ color: #fff;
     justify-content: space-between;
     gap: 20px;
     position: relative;
-    z-index: 2; /* Ensure the container is above the overlay */
+    z-index: 2; 
 }
 
 .dh-contact-info {
@@ -496,7 +393,7 @@ color: #fff;
 .dh-contactus-title {
     font-size: 18px;
     font-weight: bold;
-    color: #fff; /* Explicit color for titles */
+    color: #fff;
 }
 
 .dh-contact-form {
@@ -506,7 +403,7 @@ color: #fff;
     padding: 20px;
     border-radius: 8px;
     position: relative;
-    z-index: 2; /* Ensure form stays above overlay */
+    z-index: 2; 
 }
 
 .dh-input-box {
