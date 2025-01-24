@@ -383,15 +383,22 @@ border-radius: 8px;
 position: relative;
 margin-bottom: 20px;
 }
+.dh-contact .container,
+.dh-contact-form {
+    position: relative; /* Ensure proper stacking context */
+    z-index: 2; /* Place above the overlay */
+}
 .dh-input, .textarea {
 width: 100%;
 padding: 10px;
-background:transparent;
+background:rgba(0,0,0,0.6);
 border: 2px solid #00ff7f;
 border-radius: 5px;
 color: #fff;
 outline: none;
 resize: none;
+z-index: 3;
+position:relative;
 }
 textarea.textarea {
 height: 100px;
