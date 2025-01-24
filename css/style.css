@@ -383,11 +383,6 @@ border-radius: 8px;
 position: relative;
 margin-bottom: 20px;
 }
-.dh-contact .container,
-.dh-contact-form {
-    position: relative; /* Ensure proper stacking context */
-    z-index: 2; /* Place above the overlay */
-}
 .dh-input, .textarea {
 width: 100%;
 padding: 10px;
@@ -397,8 +392,6 @@ border-radius: 5px;
 color: #fff;
 outline: none;
 resize: none;
-z-index: 3;
-position:relative;
 }
 textarea.textarea {
 height: 100px;
@@ -428,12 +421,6 @@ color: #fff;
     max-width: 100%;
 }
 }
-.dh-contact .dh-content,
-.dh-contact .container {
-    position: relative;
-    z-index: 2; /* Place the text content above the overlay */
-}
-
 .table-responsive{
   width: 100%;
   border-collapse: collapse;
