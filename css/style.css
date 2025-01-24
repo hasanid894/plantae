@@ -359,12 +359,11 @@ display: inline-block;
 .dh-contactus-title {
 font-size: 18px;
 font-weight: bold;
-}
+}*/
 .dh-contact-form {
 flex: 1;
 min-width: 300px;
 max-width: 45%;
-background: rgba(255, 255, 255,0.1);
 padding: 20px;
 border-radius: 8px;
 }
@@ -398,10 +397,10 @@ border-radius: 5px;
 input[type="submit"]:hover {
 background: #008f5f;
 color: #fff;
-}*/
+}
 
 
-/*@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 .container {
     flex-direction: column;
     align-items: center;
@@ -410,7 +409,7 @@ color: #fff;
 .dh-contact-info, .dh-contact-form {
     max-width: 100%;
 }
-}*/
+}
 .dh-contact {
     position: relative; /* Ensures proper positioning for the overlay */
     padding: 40px 20px;
