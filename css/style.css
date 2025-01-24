@@ -362,6 +362,7 @@ background:rgba(225,225,225,0.1);
 .dh-contactus-title {
 font-size: 18px;
 font-weight: bold;
+background:rgba(225,225,225,0.1);
 }
 .dh-contact-form {
 flex: 1;
