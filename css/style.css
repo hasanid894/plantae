@@ -110,11 +110,36 @@
 .dh-socilanet-item{
     text-decoration: none;
 }
-footer{
+/*footer{
     padding: 40px 0;
     background-color: #fff;
     text-align: center;
+}*/
+/* Default styles for desktop */
+footer {
+  padding: 20px;
+  font-size: 1rem;
 }
+
+.dh-hero-section {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  footer {
+    padding: 10px; /* Adjust padding */
+    font-size: 0.8rem; /* Make text smaller */
+  }
+
+  .dh-hero-section {
+    width: 95%;
+    padding: 10px;
+  }
+}
+
 .dh-social{
     text-align: center;
     padding-bottom: 25px;
