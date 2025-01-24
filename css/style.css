@@ -419,6 +419,7 @@ color: #fff;
 }
 .dh-contact-info, .dh-contact-form {
     max-width: 100%;
+    text-align:center;
 }
 }
 .table-responsive{
