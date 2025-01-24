@@ -205,15 +205,14 @@ footer{
 
 /* Footer */
 footer {
-    padding: 20px 0;
+    padding: 0;
     background-color: #fff;
     text-align: center;
     height: auto; /* Footer adapts to content size */
 }
 
 .dh-social {
-    text-align: center;
-    padding-bottom: 15px; /* Reduced padding for smaller screens */
+    text-align: center; /* Reduced padding for smaller screens */
     color: #4b4c4d;
 }
 
