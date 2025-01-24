@@ -420,11 +420,11 @@ color: #fff;
     max-width: 100%;
 }
 }
-/*.dh-contact .dh-content,
+.dh-contact .dh-content,
 .dh-contact .container {
     position: relative;
     z-index: 2; /* Place the text content above the overlay */
-
+}
 
 .table-responsive{
   width: 100%;
