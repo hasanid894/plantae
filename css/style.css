@@ -320,12 +320,23 @@ img:hover {
   max-width: 80%;
   margin: 0 auto;
 }
-.dh-contact {
+/*.dh-contact {
 padding: 40px 20px;
 height: 100%;
 background: url(../images/pexels-vlada-karpovich-4451950.jpg) no-repeat center center fixed;
 background-size: cover;
 color: #fff;
+}*/.dh-contact {
+  padding: 40px 20px;
+  height: 100%;
+  background: url(../images/pexels-vlada-karpovich-4451950.jpg) no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.6;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 .dh-contact::before {
   content: "";
