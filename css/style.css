@@ -80,6 +80,9 @@
       font-size: 2rem;
       padding: 15px;
     }
+    .dh-hero-section {
+      height: 80vh;
+    }
   }
   
   @media (max-width: 768px) {
@@ -87,12 +90,18 @@
       font-size: 1.5rem;
       padding: 10px;
     }
+    .dh-hero-section {
+      height: 70vh;
+    }
   }
   
   @media (max-width: 480px) {
     .dh-hero-content {
       font-size: 1.2rem;
       padding: 5px;
+    }
+    .dh-hero-section {
+      height: 60vh;
     }
   }
 .dh-socilanet-item{
