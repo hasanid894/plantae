@@ -327,6 +327,15 @@ background: url(../images/pexels-vlada-karpovich-4451950.jpg) no-repeat center c
 background-size: cover;
 color: #fff;
 }
+.dh-contact::before{
+    background-color: rgba(0, 0, 0, 0.6);
+    content: "";
+    position:absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
 .dh-contactus {
 margin-top: 100px;
 text-align: center;
@@ -357,12 +366,10 @@ color: #00ff7f;
 }
 .dh-text, address {
 display: inline-block;
-background:rgba(225,225,225,0.1);
 }
 .dh-contactus-title {
 font-size: 18px;
 font-weight: bold;
-background:rgba(225,225,225,0.1);
 }
 .dh-contact-form {
 flex: 1;
