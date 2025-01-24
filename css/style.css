@@ -318,7 +318,7 @@ img:hover {
   max-width: 80%;
   margin: 0 auto;
 }
-.dh-contact {
+/*.dh-contact {
 position: relative;
 padding: 40px 20px;
 height: 100%;
@@ -327,7 +327,7 @@ background-size: cover;
 color:#fff;
 z-index:2; 
 }
-/*.dh-contact::before {
+.dh-contact::before {
   content: ""; 
   position: absolute;
   top: 0;
@@ -337,7 +337,7 @@ z-index:2;
   background: rgba(0, 0, 0, 0.5); 
   z-index: 1; 
   pointer-events: none;
-}*/
+}
 .dh-contactus {
 margin-top: 100px;
 text-align: center;
@@ -420,7 +420,140 @@ color: #fff;
     max-width: 100%;
     text-align:center;
 }
+}*/
+.dh-contact {
+    position: relative;
+    padding: 40px 20px;
+    height: 100%;
+    background: url(../images/pexels-vlada-karpovich-4451950.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    overflow: hidden; /* Ensure child elements stay within bounds */
 }
+
+.dh-contact::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+    pointer-events: none; /* Prevent overlay from affecting interactions */
+}
+
+.dh-content {
+    position: relative;
+    z-index: 2; /* Ensure content appears above the overlay */
+    text-align: center;
+    padding: 20px; /* Optional: Adjust for spacing */
+}
+
+.dh-contactus {
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff; /* Explicit color to ensure white text */
+}
+
+.dh-contactus-description {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff; /* Explicit color for description */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;
+    z-index: 2; /* Ensure the container is above the overlay */
+}
+
+.dh-contact-info {
+    flex: 1;
+    min-width: 300px;
+    max-width: 45%;
+}
+
+.dh-box {
+    margin-bottom: 20px;
+}
+
+.dh-icon {
+    display: inline-block;
+    margin-right: 10px;
+    color: #00ff7f;
+}
+
+.dh-text, address {
+    display: inline-block;
+}
+
+.dh-contactus-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff; /* Explicit color for titles */
+}
+
+.dh-contact-form {
+    flex: 1;
+    min-width: 300px;
+    max-width: 45%;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    z-index: 2; /* Ensure form stays above overlay */
+}
+
+.dh-input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.dh-input, .textarea {
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid #00ff7f;
+    border-radius: 5px;
+    color: #fff;
+    outline: none;
+    resize: none;
+}
+
+textarea.textarea {
+    height: 100px;
+}
+
+input[type="submit"] {
+    background: #00ff7f;
+    border: none;
+    padding: 10px 20px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background: #008f5f;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .dh-contact-info, .dh-contact-form {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
 .table-responsive{
   width: 100%;
   border-collapse: collapse;
